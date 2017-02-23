@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/errand_dialog_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/x15">
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_title"
+            android:paddingBottom="@dimen/x15"
+            android:layout_centerInParent="true"
+            android:gravity="center|left"
+            android:text="账户类型"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/title_color" />
+
+        <ListView
+            android:id="@+id/type_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="@dimen/y1"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

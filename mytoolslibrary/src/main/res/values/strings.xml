@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">MyLibrary</string>
+
+    <!-- AnyIdCarCheckUtils -->
+    <string name="tell_lengthNo">手机号码不足11位，请重新输入...</string>
+    <string name="mailbox">请输入有效的邮箱...</string>
+    <string name="idCarLength">身份证号码长度应为18位...</string>
+    <string name="isNumeric">身份证号码除最后一位可能为字母外，其它都应为数字...</string>
+    <string name="strMonth">身份证月份无效...</string>
+    <string name="strDay">身份证日期无效...</string>
+    <string name="isDataFormat">身份证生日无效...</string>
+    <string name="isDataFormat_Isvalid">身份证生日不在有效范围...</string>
+    <string name="AreaCode">身份证地区编码错误...</string>
+    <string name="IDStr">身份证无效，不是合法的身份证号码...</string>
+    <string name="url">请输入有效的链接地址</string>
+    <string name="Register_checkId">请输入有效的银行卡号</string>
+    <string name="UserTelToast">手机号码不能为空...</string>
+    <string name="PassWordToast">密码不能为空...</string>
+    <string name="yuan_PassWordToast">原密码不能为空...</string>
+    <string name="yuan_PassWordlengthToast">原密码长度应在6-16位之间...</string>
+    <string name="PassWordlengthToast">密码长度应在6-16位之间...</string>
+    <string name="PassWordAgainToast">确认密码不能为空...</string>
+    <string name="PassWordTwoToast">两次输入密码不匹配,请重新输入...</string>
+    <string name="noNetWork_unsuccessful">网络连接异常,请检查网络是否畅通...</string>
+    <string name="CheckSucced">验证成功，正在提交注册信息...</string>
+    <string name="isCheckNoSucced">验证失败，可能当前号码已被注册或网络运营商错误...</string>
+    <string name="CheckSucced_update_tell">验证成功，正在提交更新信息...</string>
+    <string name="OnGetCheckMaClick">验证码发送中,请注意查收...</string>
+    <string name="CheckSuccedLogin">验证成功，正在登陆中...</string>
+    <string name="isGetCheckMa">验证码不能为空...</string>
+    <string name="login_userName">请输入有效手机号码</string>
+
+    <string name="handleException">很抱歉,程序出现异常...</string>
+
+    <!--editext 输入框操作验证相关-->
+    <string name="error_only_numeric_digits_allowed">Only numeric digits are allowed.</string>
+    <string name="error_this_field_cannot_contain_special_character">This field cannot contain any special character</string>
+    <string name="error_only_standard_letters_are_allowed">Only standard letters are allowed</string>
+    <string name="error_field_must_not_be_empty">The field must not be empty</string>
+    <string name="error_email_address_not_valid">Email address not valid</string>
+    <string name="error_creditcard_number_not_valid">Credit card number is not valid</string>
+    <string name="error_phone_not_valid">Phone number not valid</string>
+    <string name="error_domain_not_valid">Domain name not valid</string>
+    <string name="error_ip_not_valid">IP Address not valid</string>
+    <string name="error_url_not_valid">Web Url is not valid</string>
+    <string name="error_notvalid_personname">Not a valid first or last name.</string>
+    <string name="error_notvalid_personfullname">Not a valid full name.</string>
+    <string name="error_date_not_valid">Format not valid</string>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+    <string name="all_images">全部图片</string>
+    <string name="folder_image_count">共%1$d张</string>
+    <string name="preview_image_count">%1$s/%2$s</string>
+    <string name="select_limit">最多选择%1$s张图片</string>
+    <string name="complete">完成</string>
+    <string name="select_complete">完成(%1$s/%2$s)</string>
+    <string name="preview_count">预览(%1$s)</string>
+    <string name="photo_crop">图片裁剪</string>
+    <string name="origin">原图</string>
+    <string name="origin_size">原图(%1$s)</string>
+
+    <!--视频操作相关-->
+    <string name="cancel_up_glide">上滑取消</string>
+    <string name="cancel_loosen">松开取消</string>
+    <string name="press_down_record">按住拍</string>
+</resources>

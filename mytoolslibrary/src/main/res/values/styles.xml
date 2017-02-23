@@ -1,0 +1,99 @@
+<resources>
+    <!--
+            Base application theme, dependent on API level. This theme is replaced
+            by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="title_bar_style">
+        <item name="android:background">@color/title_color</item>
+        <item name="android:paddingLeft">0px</item>
+        <item name="android:paddingRight">0px</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/y60</item>
+    </style>
+    <style name="title_text_style">
+        <item name="android:textSize">@dimen/y22</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 仿IOS的dialog -->
+    <style name="UIAlertViewStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--网络加载过程中的dialog -->
+    <style name="cart_dialog"
+        parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <!-- 标题文字 -->
+    <style name="text_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/y20</item>
+        <item name="android:textColor">#646464</item>
+    </style>
+
+    <!-- 主内容-->
+    <style name="text_msg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/y17</item>
+        <item name="android:textColor">@color/text_666</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">@dimen/y50</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <!-- 自定义dialog样式 -->
+    <style name="my_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/my_dialog_bg</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--SuperCheckbox的样式-->
+    <style name="SuperCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_item_checked</item>
+    </style>
+
+    <style name="popupwindow_anim_style">
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/show_from_bottom</item>
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/hide_to_bottom</item>
+    </style>
+</resources>

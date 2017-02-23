@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_view"
+    style="@style/title_bar_style"
+    android:fitsSystemWindows="true"
+    android:background="@color/title_color"
+    android:gravity="bottom" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/common_title_bar_location_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/common_title_bar_city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/imageview_btn_selector"
+                android:clickable="true"
+                android:drawablePadding="@dimen/y3"
+                android:drawableRight="@drawable/dingwei"
+                android:gravity="center"
+                android:padding="@dimen/y10"
+                android:singleLine="true"
+                android:text="北京"
+                android:textColor="@drawable/common_textcolor_bg_selector"
+                android:textSize="@dimen/y20" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/common_title_bar_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/imageview_btn_selector"
+            android:drawableLeft="@drawable/back_white"
+            android:gravity="center"
+            android:padding="@dimen/y12"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/y20"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/common_title_bar_back_right_view"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/y5"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_toRightOf="@id/common_title_bar_back_img"
+            android:background="@color/simple_grey_black"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/y40"
+            android:layout_marginRight="@dimen/y40" >
+
+            <TextView
+                android:id="@+id/common_title_bar_title_tv"
+                style="@style/title_text_style"
+                android:layout_width="@dimen/y244"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="需要显示的文字"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y22"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/common_title_bar_title_tv_pic"
+                style="@style/title_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="需要显示的文字"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y22"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_LinearLayout"
+            android:layout_width="@dimen/y244"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_toRightOf="@id/common_title_bar_location_lay"
+            android:background="@drawable/common_seach_bg"
+            android:orientation="horizontal"
+            android:visibility="gone"  >
+
+            <!--
+                android:completionHint	设置出现在下拉菜单中的提示标题
+                android:completionThreshold	设置用户至少输入多少个字符才会显示提示
+                android:dropDownHorizontalOffset	下拉菜单于文本框之间的水平偏移。默认与文本框左对齐
+                android:dropDownHeight	下拉菜单的高度
+                android:dropDownWidth	下拉菜单的宽度
+                android:singleLine	单行显示
+                android:dropDownVerticalOffset	垂直偏移量
+            -->
+
+            <AutoCompleteTextView
+                android:id="@+id/searchContentEditText"
+                android:layout_width="@dimen/y244"
+                android:layout_height="@dimen/y32"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                 android:background="@android:color/transparent"
+                android:completionThreshold="1"
+                android:hint="输入小区名字"
+                android:textColorHint="#d1d1d1"
+                android:paddingLeft="@dimen/y38"
+                android:scrollbars="none"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="@dimen/y14" />
+
+            <ImageView
+                android:id="@+id/searchImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/searchContentEditText"
+                android:layout_alignLeft="@id/searchContentEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@id/searchContentEditText"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/y4"
+                android:clickable="true"
+                android:padding="@dimen/y6"
+                android:src="@drawable/sousuo"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/searchDeleteImageView"
+                android:layout_width="@dimen/y12"
+                android:layout_height="@dimen/y12"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/y10"
+                android:background="@drawable/delete_selector_bg"
+                android:clickable="true"
+                android:src="@drawable/delete"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/common_title_bar_left_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/imageview_btn_selector"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/common_title_bar_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/y10"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/imageview_btn_selector"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y20"
+            android:layout_marginRight="@dimen/y15"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/common_title_bar_right_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/common_title_bar_right_map"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/imageview_btn_selector"
+                android:padding="@dimen/y10" />
+
+            <ImageView
+                android:id="@+id/common_title_bar_right_search"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/imageview_btn_selector"
+                android:padding="0px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

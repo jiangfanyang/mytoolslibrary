@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#f3f2ee</color>
+    <color name="title_color">#97c728</color>
+    <color name="loading_color">#97c728</color>
+    <color name="title_color_per">#BBC1Cf</color>
+    <color name="transparent">#00000000</color>
+    <color name="image_view_btn_pressed_bgColor">#30000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#B4B4B4</color>
+    <color name="simple_grey_black">#88444444</color>
+    <color name="color_search_bg">#EDEDED</color>
+    <color name="my_dialog_bg">#00ffffff</color>
+
+    <color name="text_666">#666666</color>
+    <color name="text_333">#333333</color>
+    <color name="text_999">#999999</color>
+
+    <!--刷新-->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+
+    <!-- 引导界面下面的点点 -->
+    <color name="si_default_text_color">#97c728</color>
+    <color name="si_default_text_color_selected">#97c728</color>
+    <color name="si_default_indicator_bg">#97c728</color>
+    <color name="colorPrimary">#97c728</color>
+    <color name="colorPrimaryDark">#97c728</color>
+    <color name="colorPrimaryLight">#97c728</color>
+    <color name="colorAccent">#97c728</color>
+    <color name="black_light">#97c728</color>
+    <color name="gray_dark">#97c728</color>
+    <color name="gray_light">#97c728</color>
+    <color name="brown">#97c728</color>
+    <color name="indicator_1">#97c728</color>
+    <color name="indicator_2">#97c728</color>
+    <color name="indicator_3">#97c728</color>
+    <color name="indicator_4">#97c728</color>
+
+    <color name="keyboard_gray">#d8d8d8</color>
+    <!-- 分割线 -->
+    <color name="line_color">#d1d1d1</color>
+
+    <color name="theme_body">#cc22292c</color>
+    <color name="status_bar">#cc22292c</color>
+    <color name="top_bar">#9f556061</color>
+
+    <!--视频操作相关-->
+    <color name="bg_cancel_up_glide">#66000000</color>
+    <color name="bg_cancel_loosen">#AFFE2D57</color>
+
+    <color name="pb_normal">#80EC37</color>
+    <color name="pb_loosen">#FE2D57</color>
+
+    <color name="record_text">#80EC37</color>
+    <color name="record_stroke">#262626</color>
+
+    <!--main_tab_textcolor_selector-->
+    <color name="orange1">#98C729</color>
+    <color name="text_6661">#646464</color>
+</resources>
