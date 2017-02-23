@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <com.ltf.mytoolslibrary.viewbase.takephoto.view.ViewPagerFixed
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"/>
+
+    <View
+        android:id="@+id/viewss"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"
+        android:visibility="gone"
+        android:background="#cc22292c"></View>
+
+    <include
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:layout_below="@+id/viewss"
+        layout="@layout/include_top_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:layout_alignParentBottom="true"
+        android:background="#cc22292c"
+        android:visibility="gone">
+
+        <com.ltf.mytoolslibrary.viewbase.takephoto.view.SuperCheckBox
+            android:id="@+id/cb_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/y10"
+            android:paddingLeft="@dimen/y10"
+            android:textSize="@dimen/y18"
+            android:text="原图(3.07M)"
+            android:textColor="#FFF"/>
+
+        <com.ltf.mytoolslibrary.viewbase.takephoto.view.SuperCheckBox
+            android:id="@+id/cb_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/y12"
+            android:drawablePadding="@dimen/y4"
+            android:includeFontPadding="true"
+            android:paddingLeft="@dimen/y10"
+            android:textSize="@dimen/y18"
+            android:text="选择"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+</RelativeLayout>
