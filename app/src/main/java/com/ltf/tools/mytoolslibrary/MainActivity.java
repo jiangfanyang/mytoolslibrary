@@ -6,7 +6,8 @@ import android.widget.ImageView;
 
 import com.ltf.mytoolslibrary.viewbase.utils.PicassoUtil;
 
-/**工具类库使用用例**/
+/**工具类库
+ * 使用用例**/
 public class MainActivity extends Activity {
 
     @Override
