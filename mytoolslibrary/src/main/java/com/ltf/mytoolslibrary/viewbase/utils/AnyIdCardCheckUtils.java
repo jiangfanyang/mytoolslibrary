@@ -68,6 +68,25 @@ public class AnyIdCardCheckUtils {
 	}
 
 	/**
+	 * 验证字符串是否为座机号码
+	 * @param num
+	 * @return
+	 */
+	public boolean isPhone(String num){
+		String regx = "([0-9]{3,4}-)?[0-9]{7,8}";
+		Pattern p = Pattern.compile(regx);
+		Matcher m = p.matcher(num);
+		if(m.matches()){
+			System.out.println(true);
+			return true;
+		}else{
+			System.out.println(false);
+			return false;
+		}
+	}
+
+
+	/**
 	 * 坚查网址是否输入正确 
 	 */
 	public boolean isUrl(String url) {
