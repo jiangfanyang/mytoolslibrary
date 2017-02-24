@@ -159,7 +159,8 @@ public class GetNetWorkDataPresenter<T,Y> implements SwipyRefreshLayout.OnRefres
 			this.mDatas.clear();
 		}
 		this.mDatas.addAll(mData);
-		adapter.notifyDataSetChanged();
+		if(adapter != null)
+			adapter.notifyDataSetChanged();
 		updateIsVisibiNullView();
 		if(monRefreshOnLoadPageNumber != null){
 			monRefreshOnLoadPageNumber.onBackPageNumberAndSize(pageNo, pageSize,mDatas);
@@ -275,7 +276,8 @@ public class GetNetWorkDataPresenter<T,Y> implements SwipyRefreshLayout.OnRefres
 	public void remove(int position){
 		if(this.mDatas.size() > position){
 			this.mDatas.remove(position);
-			adapter.notifyDataSetChanged();
+			if(adapter != null)
+				adapter.notifyDataSetChanged();
 		}
 		if(monRefreshOnLoadPageNumber != null){
 			monRefreshOnLoadPageNumber.onBackPageNumberAndSize(pageNo, pageSize,mDatas);
@@ -283,7 +285,8 @@ public class GetNetWorkDataPresenter<T,Y> implements SwipyRefreshLayout.OnRefres
 	}
 
 	public void notifyDataSetChanged(){
-		adapter.notifyDataSetChanged();
+		if(adapter != null)
+			adapter.notifyDataSetChanged();
 	}
 
 	private String SuccessdKey = null;
