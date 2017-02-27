@@ -394,15 +394,25 @@ public class GetNetWorkDataPresenter<T,Y> implements SwipyRefreshLayout.OnRefres
 								//L.e("设置请求参数监听",SuccessdKey,SuccessdValue,Errormsg);
 								if(IsNullUtils.isNulls(SuccessdKey,SuccessdValue,Errormsg)){
 									if("200".equals(GetJson.getJson(arg0, "code"))){
-										T s = (T) new Gson().fromJson(arg0, classOfT);
-										ts.onGetNetWorkData(s);
+										try{
+											T s = (T) new Gson().fromJson(arg0, classOfT);
+											ts.onGetNetWorkData(s);
+										}catch (Exception e){
+											ts.showError("服务器数据异常");
+											L.e("服务器数据异常:",e.toString());
+										}
 									}else{
 										ts.showError(GetJson.getJson(arg0, "msg"));
 									}
 								}else{
 									if((SuccessdKey+"").equals(GetJson.getJson(arg0, SuccessdValue))){
-										T s = (T) new Gson().fromJson(arg0, classOfT);
-										ts.onGetNetWorkData(s);
+										try{
+											T s = (T) new Gson().fromJson(arg0, classOfT);
+											ts.onGetNetWorkData(s);
+										}catch (Exception e){
+											ts.showError("服务器数据异常");
+											L.e("服务器数据异常:",e.toString());
+										}
 									}else{
 										ts.showError(GetJson.getJson(arg0, Errormsg));
 									}
